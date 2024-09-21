@@ -17,7 +17,7 @@ interface Location{
 }
 
 export default function Home():JSX.Element {
-  const [weather, setWeather]=useState<Weather|null>(null);
+  // const [weather, setWeather]=useState<Weather|null>(null);
   const [location,setLocation]=useState<Location>({lat:null,lon:null});
   const [address,setAddress]=useState<string|null>(null);
   useEffect(()=>{
@@ -34,12 +34,7 @@ export default function Home():JSX.Element {
       });
     }
   },[]);
-  
-  useEffect(()=>{
-    console.log(location);
 
-  },[]);
-  
   return (
 <div>
   <h1>Weather App</h1>
