@@ -20,8 +20,10 @@ export default function Home():JSX.Element {
 
   return (
 <div>
-  <h1>Weather App</h1>
-  <p>現在の住所:{address? address:'取得中...'}</p>
+  <h1 className="m-3 text-3xl text-center">場所情報取得アプリ</h1>
+  <h2 className="m-3 text-xl text-center">Created by <span className="text-violet-500">Ryotaro</span>.</h2>
+  <hr />
+  <p className="m-3 text-center">あなたがいる現在の場所は: <br /> {address? address:'取得中...'}です。</p>
 </div>
   );
 }
